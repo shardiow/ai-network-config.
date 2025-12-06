@@ -1,0 +1,14 @@
+devices:
+  - name: r1
+    vendor: cisco
+    device_type: cisco_ios
+    host: 192.168.1.1
+    # SECURED: Reference environment variables, which will be set by GitHub Secrets
+    username: ${{ NET_USER }} 
+    password: ${{ NET_PASS }} 
+  - name: r2
+    vendor: juniper
+    device_type: juniper_junos
+    host: 192.168.1.2
+    username: ${{ NET_USER }}
+    password: ${{ NET_PASS }}

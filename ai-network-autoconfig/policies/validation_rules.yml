@@ -1,0 +1,4 @@
+rules:
+  - "must not contain default password"
+  - "ssh must be enabled"
+  - "no telnet"

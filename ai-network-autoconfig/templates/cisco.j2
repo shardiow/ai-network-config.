@@ -1,0 +1,10 @@
+hostname {{ hostname }}
+!
+interface GigabitEthernet0/0
+ ip address {{ ip }} {{ mask }}
+ no shut
+!
+router ospf 1
+ network {{ network }} area 0
+!
+end
